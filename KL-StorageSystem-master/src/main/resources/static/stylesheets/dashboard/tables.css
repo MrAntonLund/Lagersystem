@@ -1,0 +1,113 @@
+.table-section {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: fit-content;
+    margin-left: 50px;
+    border: 1px solid black;
+}
+
+.content-table {
+    font-size: 0.9em;
+}
+
+/* ------------- STATUS INDICATORS --------------- */
+.status-indicator-green {
+    background-color: #1cc88a;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.status-indicator-red {
+    background-color: #c22d40;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.status-indicator-yellow {
+    background-color: #f1e05a;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+    text-align: center;
+}
+/* ---------- TABLE BUTTONS -------------*/
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn-group button.active {
+    background: #ee7e2d;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-group button {
+    border-bottom: 0;
+}
+
+#centerMe {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+/* ------------- TABLE HEADER --------------- */
+.content-table thead tr {
+    background-color: #ee7e2d;
+    color: white;
+    text-align: center;
+}
+
+/* ------------- EVERY TABLE SECOND ROW --------------- */
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* ------------- EVERY TABLE ROW --------------- */
+.content-table tbody tr {
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* -------------- overwrite stufff -------- */
+
+.dataTables_wrapper .dataTables_filter input {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.dataTables_wrapper .dataTables_info {
+    padding-left: 0.755em;
+}
+
+.dataTables_wrapper:after {
+    height: 3px;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    padding: 0.755em;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table.dataTable {
+    border-top: 1px solid black;
+}

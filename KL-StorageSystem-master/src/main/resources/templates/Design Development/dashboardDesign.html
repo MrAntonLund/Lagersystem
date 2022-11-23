@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/stylesheets/global/global.css">
+    <link rel="stylesheet" href="../../static/stylesheets/dashboard/dashboard.css">
+    <link rel="stylesheet" href="../../static/stylesheets/global/navigation-sidebar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/scripts/dashboard/tableSort.js"></script>
+</head>
+<body>
+<header>
+    <div class="topNav">
+        <a href=""> <img class="logo" src="../../static/images/kemp-lauritzen-logo_0.png"
+                         alt="Kemp & Laurtizen logo"></a>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fas fa-poll-h"></i>Oversigt</a></li>
+            <li><a href="#"><i class="fas fa-plus-square"></i>Tilføj</a></li>
+            <li><a href="../removeUnit/removeUnit.html"><i class="fas fa-minus-square"></i>Fjern</a></li>
+            <li><a href="#"><i class="far fa-file-invoice-dollar"></i>Fakturer</a></li>
+            <li><a href="#"><i class="far fa-calculator"></i>Optælling</a></li>
+        </ul>
+    </div>
+</header>
+<h2>Dashboard</h2>
+<section class="table-section">
+    <table id="content-table">
+        <thead>
+        <tr>
+            <td>Navn</td>
+            <td>Model</td>
+            <td>Stregkode</td>
+            <td>Status</td>
+            <td>Beholdning i alt</td>
+            <td>Lager 1</td>
+            <td>Lager 2</td>
+            <td>Lager 3</td>
+            <td>Leverandør</td>
+            <td>Type</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hp</td>
+            <td>Elitebook 840 G5</td>
+            <td>3234762754974</td>
+            <td>
+                <div class="status-indicator-red">Kritisk</div>
+            </td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>COMM2IG</td>
+            <td>Computer</td>
+        </tr>
+        <tr>
+            <td>Hp</td>
+            <td>Elitebook 840 G5</td>
+            <td>3234762754974</td>
+            <td>
+                <div class="status-indicator-yellow">Lav</div>
+            </td>
+            <td>9</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>COMM2IG</td>
+            <td>Computer</td>
+        </tr>
+        <tr>
+            <td>Hp</td>
+            <td>Elitebook 840 G5</td>
+            <td>3234762754974</td>
+            <td>
+                <div class="status-indicator-green">Ok</div>
+            </td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>5</td>
+            <td>COMM2IG</td>
+            <td>Computer</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!--   <nav id>
+
+       <ul id="main-navigation">
+           <li><a href="">Oversigt</a></li>
+           <li><a href="">Udlej</a></li>
+           <li><a href="">Retur</a></li>
+           <li><a href="">Fakturer</a></li>
+           <li><a href="">Optælling</a></li>
+       </ul>
+   </nav>-->
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+.table-section {
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 3px rgba(51, 51, 51, 0.81);
+    -webkit-box-shadow: 0 0 3px rgba(51, 51, 51, 0.81);
+    box-shadow: 0 0 3px rgba(51, 51, 51, 0.81);
+    width: 80rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+}
+
+
+.content-table {
+    border-radius: 5px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.9em;
+    overflow: hidden;
+}
+
+.content-table thead tr {
+    background-color: #ee7e2d;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 0 solid #ee7e2d;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.status-indicator-green{
+    background-color:#1cc88a;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+}
+.status-indicator-red{
+    background-color:#c22d40;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+}
+.status-indicator-yellow{
+    background-color:#f1e05a;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+}
+/*
+Color for ok status: #1cc88a
+Color for lav status: #f1e05a
+Color for kritisk status:#c22d40
+ */

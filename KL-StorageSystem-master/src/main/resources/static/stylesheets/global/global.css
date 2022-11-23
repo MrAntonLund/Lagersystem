@@ -1,0 +1,16 @@
+/* ------- BACKGROUND ----- */
+
+html {
+    background-color: #ffffff;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+}

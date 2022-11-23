@@ -1,0 +1,21 @@
+#checkout {
+    padding-right: 50px;
+    padding-left: 50px;
+    border-left: 1px solid black;
+    padding-top: 25px;
+}
+
+.btn-group button{
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 19px;
+    border: 1px solid #000000;
+    padding: 15px 50px;
+    cursor: pointer;
+    float: left;  /*Float the buttons side by side*/
+}
+
+#cart button:hover, .btn-group button:hover {
+    color: #ffffff;
+    background-color: #ee7e2d;
+}

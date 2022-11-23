@@ -1,0 +1,51 @@
+#navigation-sidebar {
+    overflow: hidden;
+    width: 15rem;
+    height: 100%;
+    background: #484848;
+    transition: all .5s ease;
+}
+
+#navigation-sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 15rem;
+    line-height: 65px;
+    font-size: 20px;
+    color: #808080;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid #333;
+    transition: .4s;
+    text-decoration: none;
+}
+
+#navigation-sidebar ul li:hover a {
+    padding-left: 50px;
+    color: white;
+}
+
+#navigation-sidebar ul {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#navigation-sidebar ul a i {
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

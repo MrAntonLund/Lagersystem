@@ -1,0 +1,22 @@
+<head>
+
+    <!-- GLOBAL !-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/stylesheets/global/global.css}">
+    <link rel="stylesheet" th:href="@{/stylesheets/global/navigation-sidebar.css}">
+    <link rel="stylesheet" th:href="@{/stylesheets/global/header.css}">
+    <!-- datatables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!-- scripts --->
+    <script th:src="@{/scripts/global.js}"></script>
+    <script th:src="@{/scripts/escapeHTML.js}"></script>
+    <script th:src="@{https://kit.fontawesome.com/a076d05399.js}"></script>
+
+    <!-- CUSTOM !-->
+    <title th:text="${currentPage}"></title>
+    <link rel="stylesheet" th:href="@{'/stylesheets/' + ${customCSS}}">
+    <link rel="stylesheet" th:href="@{'/stylesheets/' + ${customCSS2}}">
+    <link rel="stylesheet" th:href="@{'/stylesheets/' + ${customCSS3}}">
+
+</head>

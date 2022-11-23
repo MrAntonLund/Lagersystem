@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head.html(currentPage='Dashboard', customCSS='dashboard/dashboard.css', customCSS2='dashboard/tables.css', customCSS3='dashboard/checkout.css')"></head>
+<body>
+<header th:replace="fragments/header.html"></header>
+<aside th:replace="fragments/sidebar.html"></aside>
+
+<div id="tables">
+    <!--------- mini-header ---------->
+    <div id="centerMe">
+        <div class="btn-group">
+            <button type="button" class="units-btn active" onclick="toggleTables()"> Enheder</button>
+            <button type="button" class="ass-btn" onclick="toggleTables()">Tilbehør</button>
+        </div>
+    </div>
+
+    <!--------- UNITS ---------->
+    <div id="units">
+        <section class="table-section">
+            <table id="units-table" class="content-table">
+                <thead>
+                <tr>
+                    <td></td>
+                    <td>Navn</td>
+                    <td>Model</td>
+                    <td>Stregkode</td>
+                    <td>Status</td>
+                    <td>Beholdning i alt</td>
+                    <td>Lager 1</td>
+                    <td>Lager 2</td>
+                    <td>Lager 3</td>
+                    <td>Leverandør</td>
+                    <td>Type</td>
+                </tr>
+                </thead>
+            </table>
+        </section>
+    </div>
+
+    <!--------- ACCESSORIES ---------->
+    <div id="accessories">
+        <section class="table-section">
+            <table class="content-table" id="accessories-table" style="width: fit-content">
+                <thead>
+                <tr>
+                    <td></td>
+                    <td>Navn</td>
+                    <td>Model</td>
+                    <td>Stregkode</td>
+                    <td>Status</td>
+                    <td>Beholdning i alt</td>
+                    <td>Lager 1</td>
+                    <td>Lager 2</td>
+                    <td>Lager 3</td>
+                    <td>Leverandør</td>
+                    <td>Type</td>
+                </tr>
+                </thead>
+                <tbody id="overview-body-accessories"></tbody>
+            </table>
+        </section>
+    </div>
+
+</div>
+
+<aside id="checkout">
+    <div id="cart">
+        <p><i class="fas fa-shopping-cart"></i>Valgte enheder:</p>
+        <table id="selected-packages" class="selected-items"></table>
+        <table id="selected-units" class="selected-items"></table>
+        <table id="selected-accessories" class="selected-items"></table>
+        <button type="button" class="btn-cart" id="remove-btn">Fjern fra lager</button>
+    </div>
+</aside>
+
+<script th:src="@{https://code.jquery.com/jquery-3.5.1.js}"></script>
+<script th:src="@{https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{scripts/dashboard/dashboard.js}"></script>
+<script th:src="@{scripts/dashboard/units-child-row.js}"></script>
+<script th:src="@{scripts/dashboard/accessories-child-row.js}"></script>
+<script th:src="@{scripts/dashboard/utility.js}"></script>
+<script th:src="@{scripts/dashboard/removal.js}"></script>
+</body>
+
+</html>

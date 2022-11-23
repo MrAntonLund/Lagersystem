@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head.html(currentPage='Invoice', customCSS='invoice/invoice.css')"></head>
+<body>
+<header th:replace="fragments/header.html"></header>
+<aside th:replace="fragments/sidebar.html"></aside>
+<div class="invoice">
+    <h1>Lav Faktura</h1>
+    <button id="expand-invoice-form">Lav Faktura</button>
+    <div id="create-invoice-form"></div>
+</div>
+
+
+
+<!-- TODO Mangler Thymeleaf på disse scripts -->
+<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js}"></script>
+<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.7/moment-timezone-with-data-2010-2020.min.js}"></script>
+<script th:src="@{https://unpkg.com/jspdf-invoice-template@1.3.1/dist/index.js}"></script>
+<script  th:src="@{scripts/invoice/invoice.js}"></script>
+</body>
+</html>
